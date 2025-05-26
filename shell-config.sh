@@ -24,8 +24,13 @@ case "$current_shell" in
     echo "Alias ditambahkan ke config.fish (fish shell)"
     ;;
   *)
-    echo "Shell tidak dikenali, menambahkan ke ~/.profile sebagai fallback"
-    echo "$alias_line" >> "$HOME/.profile"
+    echo "Shell tidak di kenal : menambahkan ke keduanya"
+    echo "$alias_line" >> "$HOME/.zshrc"
+    echo "Alias ditambahkan ke .zshrc"
+    echo "Jalankan: source ~/.zshrc atau buka ulang terminal"                                                 echo "$alias_line" >> "$HOME/.bashrc"
+    echo "Alias ditambahkan ke .bashrc"
+    echo "Jalankan: source ~/.bashrc atau buka ulang
+terminal"
     ;;
 esac
 
