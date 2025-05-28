@@ -1,4 +1,5 @@
 require("plugins")
+require("blankline")
 require("keymaps")
 require("options")
 
