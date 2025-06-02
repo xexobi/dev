@@ -1,6 +1,6 @@
 #!/bin/sh
 
-alias_line="alias fvim='XDG_CONFIG_HOME=\$HOME/fvim/config XDG_DATA_HOME=\$HOME/fvim/data XDG_STATE_HOME=\$HOME/fvim/state nvim'"
+alias_line="alias fvim='XDG_CONFIG_HOME=\$HOME/dev/config XDG_DATA_HOME=\$HOME/dev/data XDG_STATE_HOME=\$HOME/dev/state nvim'"
 
 # Deteksi shell aktif
 current_shell=$(ps -p $$ -o comm=)
