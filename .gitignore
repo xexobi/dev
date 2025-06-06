@@ -1,4 +1,5 @@
 # .gitignore
+*.json
 data/
 /nvim/
 state/
