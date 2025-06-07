@@ -1,17 +1,7 @@
-require('keymaps')
-require('options')
-
---Plugin manager
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git", "clone", "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim", lazypath
-  })
-end
-vim.opt.rtp:prepend(lazypath)
-require("lazy").setup({
-  -- Daftar plugin di sini
-  { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
-})
-
+--Configuration plugins
+require('lazy-conf')
+require('keymaps-conf')
+require('options-conf')
+require('autopairs-conf')
+require('autopairs-conf')
+require('lsp-conf')
