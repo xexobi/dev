@@ -1,7 +1,7 @@
 --Configuration plugins
-require('lazy-conf')
-require('keymaps-conf')
-require('options-conf')
-require('autopairs-conf')
-require('autopairs-conf')
-require('lsp-conf')
+--=====================
+require('lazy-conf') --for plugins manager
+require('keymaps-conf') --for keymaps
+require('options-conf') --for options
+require('autopairs-conf')-- for autopairs
+require('lsp-conf') --for Lsp

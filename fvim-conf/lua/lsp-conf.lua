@@ -1,3 +1,4 @@
+--Configuration for autocomplletion
 local cmp = require("cmp")
 cmp.setup({
   mapping = cmp.mapping.preset.insert({
@@ -30,7 +31,7 @@ mason_lspconfig.setup({
     end,
    },
 })
--- setuo lua just for termux
+-- setup lua just for termux
 lspconfig.lua_ls.setup({
       capabilities = capabilities,
       cmd = { "/data/data/com.termux/files/home/lua-language-server/bin/lua-language-server" }, -- sesuaikan path-nya

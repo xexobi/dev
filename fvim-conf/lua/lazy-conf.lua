@@ -8,11 +8,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-  -- telescope plugggin
+  --for telescope 
   { "nvim-telescope/telescope.nvim",
   dependencies = { "nvim-lua/plenary.nvim"
   } },
-  --Lsp plugin
+  -- for Lsp
   {
   "neovim/nvim-lspconfig",
   dependencies = {
