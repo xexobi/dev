@@ -3,4 +3,5 @@
 data/
 /nvim/
 state/
-config/nvim/plugin/packer_compiled.lua
+fvim-conf/plugin/packer_compiled.lua
+fvim-conf/rplugin/
