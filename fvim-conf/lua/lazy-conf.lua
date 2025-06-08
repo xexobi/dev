@@ -11,7 +11,7 @@ require("lazy").setup({
     --For statusline
   {
   "F28-none/statusL",
-  build = ":UpdateRemotePlugins",
+    build = ":UpdateRemotePlugins",
   },
 
   --for telescope 
