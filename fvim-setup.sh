@@ -1,6 +1,7 @@
-echo "alias fvim=nvim" >> ~/.bashrc # for bash
-echo "alias fvim=nvim" >> ~/.zshrc #for zsh
+echo "alias fv=nvim" >> ~/.bashrc # for bash
+echo "alias fv=nvim" >> ~/.zshrc #for zsh
 
 #make symlink to ~/.config/nvim
 
 ln -sf ~/dev/fvim-conf ~/.config/nvim
+ln -sf ~/dev/tmux-conf ~/.tmux.conf

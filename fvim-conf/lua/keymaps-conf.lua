@@ -1,14 +1,20 @@
 local map = vim.keymap.set
 
 vim.g.mapleader = ' ' --mengubah leader menjadi spasi
-
+map('t','<Esc>','<C-\\><C-n>',{silent=true,noremap=true})
+-- untuk save file
 map('n','<leader>w',':w<cr>',{silent=true,noremap=true})
+--untuk exit neovim
 map('n','<leader>q',':q<cr>',{silent=true,noremap=true})
+--hapus highlight search
 map('n','<Esc>',':nohlsearch<cr>',{silent=true})
 -- visual tab
 map("v", "<Tab>", ">gv", { noremap = true, silent = true })
 --telescope map
 map('n','<leader>ff',':Telescope find_files<cr>',{silent=true,noremap=true})
+map('n','<leader><Tab>',':Telescope buffers<cr>',{silent=true,noremap=true})
+map('n','<Tab>',':bn<cr>',{silent=true,noremap=true})
+
 -- for lua comment 
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "lua",

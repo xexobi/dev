@@ -1,12 +1,29 @@
-require("telescope").setup({
-  defaults = {
-    vimgrep_arguments = {
-      "fd",
-      "--type", "f",
-      "--hidden",
-      "--follow",  -- ⚠️ Ini penting
-      "--exclude", ".git"
-    }
-  }
-})
-
+-- local actions = require('telescope.actions')
+-- local action_state = require('telescope.actions.state')
+-- 
+-- require('telescope').setup {
+--   defaults = {
+--     mappings = {
+--       i = {
+--         ["<CR>"] = function(prompt_bufnr)
+--           local selection = action_state.get_selected_entry()
+--           actions.close(prompt_bufnr)
+--           vim.cmd("tabnew " .. selection.path)
+--         end,
+--       },
+--     },
+--   },
+-- }
+-- 
+-- require("telescope").setup({
+--   defaults = {
+--     vimgrep_arguments = {
+--       "fd",
+--       "--type", "f",
+--       "--hidden",
+--       "--follow",  -- ⚠️ Ini penting
+--       "--exclude", ".git"
+--     }
+--   }
+-- })
+-- 

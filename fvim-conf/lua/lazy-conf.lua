@@ -9,11 +9,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
+        'F28-none/py_linevim',
+        build=':UpdateRemotePlugins'
     },
+    {'Mofiqul/dracula.nvim'},
     {
   'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
@@ -26,13 +25,6 @@ require("lazy").setup({
     }
   end
     },
-
-    --For statusline
-  {
-  "F28-none/statusL",
-    build = ":UpdateRemotePlugins",
-  },
-
   --for telescope 
   { "nvim-telescope/telescope.nvim",
   dependencies = { "nvim-lua/plenary.nvim"

@@ -6,4 +6,10 @@ require('keymaps-conf') --for keymaps
 require('options-conf') --for options
 require('autopairs-conf')-- for autopairs
 require('lsp-conf') --for Lsp
-vim.cmd[[colorscheme tokyonight]]
+-- Lua:
+vim.cmd[[colorscheme dracula]]
+
+vim.api.nvim_create_user_command("Setings", function()
+  vim.cmd("cd ~/.config/nvim")
+  vim.cmd("edit init.lua")
+end, {})
