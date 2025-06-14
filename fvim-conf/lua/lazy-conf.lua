@@ -8,10 +8,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
-    {
-        'F28-none/py_linevim',
-        build=':UpdateRemotePlugins'
-    },
+--     {
+--         'F28-none/py_linevim',
+--         build=':UpdateRemotePlugins'
+--     },
     {'Mofiqul/dracula.nvim'},
     {
   'nvim-treesitter/nvim-treesitter',

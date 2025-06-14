@@ -31,6 +31,9 @@ mason_lspconfig.setup({
     end,
    },
 })
+lspconfig.clangd.setup({
+      capabilities = capabilities,
+})
 -- setup lua just for termux
 lspconfig.lua_ls.setup({
       capabilities = capabilities,
