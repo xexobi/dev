@@ -17,14 +17,13 @@ vim.cmd[[colorscheme dracula]]
 
 vim.fn.Py_line_config({
 --     icon_mode = '#', -- icon for mode 
---     border_left = '∆', -- baground color file
---     border_right = '§', -- baground color file
---     icon_branch = '', -- baground color file
---     icon_file = '#', -- baground color file
---     file_bg = '#e0601b', -- baground color file
---     pipe= '•', -- baground color file
---     branch_bg = '#1b70e0',-- baground color file
-    --mode baground harus tabel lua
+--     border_left = '∆', -- icon for border_left
+--     border_right = '§', -- icon for border_right
+--     icon_branch = '', -- icon for branch
+--     icon_file = '#', -- icon for file 
+--     file_bg = '#e0601b', -- baground for file section
+--     separator = '•', -- icon for separator
+--     branch_bg = '#1b70e0',-- baground for branch section
     mode_bg = {
        Normal='#6f03fc',
        Insert='#000000',
