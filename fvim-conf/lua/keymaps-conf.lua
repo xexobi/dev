@@ -12,8 +12,9 @@ map('n','<Esc>',':nohlsearch<cr>',{silent=true})
 map("v", "<Tab>", ">gv", { noremap = true, silent = true })
 --telescope map
 map('n','<leader>ff',':Telescope find_files<cr>',{silent=true,noremap=true})
-map('n','<leader><Tab>',':Telescope buffers<cr>',{silent=true,noremap=true})
+map('n','<leader><Tab>',':bp<cr>',{silent=true,noremap=true})
 map('n','<Tab>',':bn<cr>',{silent=true,noremap=true})
+map('n','<leader>x',':bd<cr>',{silent=true,noremap=true})
 
 -- for lua comment 
 vim.api.nvim_create_autocmd("FileType", {

@@ -1,6 +1,5 @@
 --Configuration plugins
 --=====================
-
 vim.api.nvim_create_user_command("Setings", function()
   vim.cmd("cd ~/.config/nvim")
   vim.cmd("edit init.lua")
@@ -21,12 +20,12 @@ vim.fn.Py_line_config({
 --     border_right = '§', -- icon for border_right
 --     icon_branch = '', -- icon for branch
 --     icon_file = '#', -- icon for file 
---     file_bg = '#e0601b', -- baground for file section
+     file_bg = '#778576', -- baground for file section
 --     separator = '•', -- icon for separator
---     branch_bg = '#1b70e0',-- baground for branch section
+     branch_bg = '#778576',-- baground for branch section
     mode_bg = {
-       Normal='#6f03fc',
-       Insert='#000000',
+       Normal='#64a4ed',
+       Insert='#1cfc03',
        Visual='#888888',
        VisualLine='#888888',
        VisualBlock='#888888',
