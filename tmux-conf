@@ -1,3 +1,5 @@
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin "arcticicestudio/nord-tmux"
 set-option -sa terminal-overrides ',xterm-256color:RGB'
 unbind C-b                  # Lepas prefix default Ctrl+b
 set -g prefix C-a           # Ganti prefix ke Ctrl+a
@@ -9,3 +11,4 @@ bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
+run '~/.tmux/plugins/tpm/tpm'
