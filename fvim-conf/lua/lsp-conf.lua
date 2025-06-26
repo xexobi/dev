@@ -21,8 +21,9 @@ local mason_lspconfig =require("mason-lspconfig")
 local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 --list server 
+--===============================================================
 mason_lspconfig.setup({
-    ensure_installed = {"pyright","html","bashls"},
+    ensure_installed = {"pyright","html","bashls","lua_ls","clangd"},
         -- automatic Configuration for evry LS
     handlers = {function(server_name)
         lspconfig[server_name].setup({
@@ -31,6 +32,7 @@ mason_lspconfig.setup({
     end,
    },
 })
+--===============================================================
 lspconfig.clangd.setup({
       capabilities = capabilities,
 })

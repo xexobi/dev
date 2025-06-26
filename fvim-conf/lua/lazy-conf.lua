@@ -7,12 +7,15 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+--===============================================================
 require("lazy").setup({
     {
         'F28-none/py_linevim',
         build=':UpdateRemotePlugins'
     },
+--===============================================================
     {'Mofiqul/dracula.nvim'},
+--===============================================================
     {
   'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
@@ -25,10 +28,12 @@ require("lazy").setup({
     }
   end
     },
+--===============================================================
   --for telescope 
   { "nvim-telescope/telescope.nvim",
   dependencies = { "nvim-lua/plenary.nvim"
   } },
+--===============================================================
   -- for Lsp
   {
   "neovim/nvim-lspconfig",
@@ -44,6 +49,7 @@ require("lazy").setup({
     "saadparwaiz1/cmp_luasnip",
   }},
   -- for auto pairs 
+--===============================================================
   {
     "windwp/nvim-autopairs"
   },
