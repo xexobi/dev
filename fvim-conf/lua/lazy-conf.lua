@@ -7,14 +7,17 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
---===============================================================
 require("lazy").setup({
+    {
+  "neanias/everforest-nvim",
+  version = false,
+  lazy = false,
+  priority = 1000, -- make sure to load this before all the other start plugins
+    },
     {
         'F28-none/py_linevim',
         build=':UpdateRemotePlugins'
     },
---===============================================================
-    {'Mofiqul/dracula.nvim'},
 --===============================================================
     {
   'nvim-treesitter/nvim-treesitter',
@@ -53,5 +56,5 @@ require("lazy").setup({
   {
     "windwp/nvim-autopairs"
   },
+--===============================================================
 })
-
