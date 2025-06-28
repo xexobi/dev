@@ -11,7 +11,7 @@ mkdir -p /mnt/boot/efi
 mount /dev/partisi_efi /mnt/boot/efi
 
 #install base-system 
-xbps-install -S -R https://repo-fastly.voidlinux.org/current-r /mnt base-system dejavu-fonts-ttf NetworkManager grub grub-x86_64-efi dbus efibootmgr neovim elogind mesa mesa-dri alsa-utils
+xbps-install -S -R https://repo-fastly.voidlinux.org/current-r /mnt base-system dejavu-fonts-ttf NetworkManager grub grub-x86_64-efi dbus efibootmgr neovim mesa mesa-dri alsa-utils
 
 #generate fstab
 
@@ -58,3 +58,13 @@ ln -s /etc/sv/dbus /var/service
 ln -s /etc/sv/elogind /var/service
 #audio
 ln -s /etc/sv/alsa /var/service
+
+#hyprland void
+
+elogind
+hyprland
+hyprland-qtutils
+waybar
+xorg-server-xwayland
+pavucontrol
+pulseaudio
