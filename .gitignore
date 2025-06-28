@@ -1,7 +1,5 @@
 # .gitignore
 *.json
-data/
-/nvim/
 state/
 fvim-conf/plugin/packer_compiled.lua
 fvim-conf/rplugin/
