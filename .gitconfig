@@ -1,0 +1,11 @@
+[user]
+    name = F28-none
+    email = fadlidev99@gmail.com
+
+[core]
+    editor = nano
+
+[alias]
+    co = checkout
+    st = status
+
