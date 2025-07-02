@@ -23,7 +23,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 --list server 
 --===============================================================
 mason_lspconfig.setup({
-    ensure_installed = {"pyright","html","bashls","lua_ls","clangd"},
+    ensure_installed = {"pyright","html","bashls"},
         -- automatic Configuration for evry LS
     handlers = {function(server_name)
         lspconfig[server_name].setup({
@@ -33,9 +33,9 @@ mason_lspconfig.setup({
    },
 })
 --===============================================================
-lspconfig.clangd.setup({
-      capabilities = capabilities,
-})
+-- lspconfig.clangd.setup({
+--       capabilities = capabilities,
+-- })
 -- setup lua just for termux
 -- lspconfig.lua_ls.setup({
 --       capabilities = capabilities,
