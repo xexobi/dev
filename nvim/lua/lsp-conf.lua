@@ -36,16 +36,15 @@ mason_lspconfig.setup({
 -- lspconfig.clangd.setup({
 --       capabilities = capabilities,
 -- })
--- setup lua just for termux
--- lspconfig.lua_ls.setup({
---       capabilities = capabilities,
---       cmd = { "/data/data/com.termux/files/home/lua-language-server/bin/lua-language-server" }, -- sesuaikan path-nya
---       settings = {
---         Lua = {
---             runtime = { version = "LuaJIT" },
---             diagnostics = { globals = { "vim" } },
---             workspace = { library = vim.api.nvim_get_runtime_file("", true) },
---             telemetry = { enable = false },
---     },
---   },
--- })
+lspconfig.lua_ls.setup({
+      capabilities = capabilities,
+      cmd = { "/data/data/com.termux/files/home/Project/bin/lua-language-server" }, -- sesuaikan path-nya
+      settings = {
+        Lua = {
+            runtime = { version = "LuaJIT" },
+            diagnostics = { globals = { "vim" } },
+            workspace = { library = vim.api.nvim_get_runtime_file("", true) },
+            telemetry = { enable = false },
+    },
+  },
+})
