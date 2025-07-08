@@ -1,0 +1,2 @@
+##Komfigurasi gcc tahap 1
+../gcc-releases-gcc-14.3.0/configure   --target=aarch64-unknown-linux-gnu   --prefix=$LFS/tools --with-sysroot=$LFS   --with-newlib   --without-headers   --enable-default-pie  --enable-default-ssp  --disable-nls   --disable-shared   --disable-multilib   --disable-threads   --disable-libatomic   --disable-libgomp   --disable-libquadmath   --disable-libssp   --disable-libvtv   --disable-libstdcxx   --enable-languages=c
