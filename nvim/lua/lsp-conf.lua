@@ -23,7 +23,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 --list server 
 --===============================================================
 mason_lspconfig.setup({
-    ensure_installed = {"pyright","html","bashls"},
+    ensure_installed = {"pyright","html","bashls","lua_ls","clangd"},
         -- automatic Configuration for evry LS
     handlers = {function(server_name)
         lspconfig[server_name].setup({
@@ -32,19 +32,3 @@ mason_lspconfig.setup({
     end,
    },
 })
---===============================================================
--- lspconfig.clangd.setup({
---       capabilities = capabilities,
--- })
--- lspconfig.lua_ls.setup({
---       capabilities = capabilities,
---       cmd = { "/data/data/com.termux/files/home/Project/bin/lua-language-server" }, -- sesuaikan path-nya
---       settings = {
---         Lua = {
---             runtime = { version = "LuaJIT" },
---             diagnostics = { globals = { "vim" } },
---             workspace = { library = vim.api.nvim_get_runtime_file("", true) },
---             telemetry = { enable = false },
---     },
---   },
--- })
