@@ -9,11 +9,19 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     {
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+},
+    --colorsheme
+    {
   "neanias/everforest-nvim",
   version = false,
   lazy = false,
   priority = 1000, -- make sure to load this before all the other start plugins
     },
+    --status line neovim 
     {
         'F28-none/py_linevim',
         build=':UpdateRemotePlugins'
