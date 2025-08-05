@@ -196,7 +196,7 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "top", screen = s , height = 15})
 
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -495,7 +495,7 @@ awful.rules.rules = {
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
      { rule = { class = "Firefox" },
-       properties = { tag = "4" } },
+       properties = { tag = "2" } },
 }
 -- }}}
 
