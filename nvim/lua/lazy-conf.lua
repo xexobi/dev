@@ -9,6 +9,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     {
+  "rafamadriz/friendly-snippets"
+},
+    {
   "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,

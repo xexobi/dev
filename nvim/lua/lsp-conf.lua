@@ -1,4 +1,5 @@
 --Configuration for autocomplletion
+require("luasnip.loaders.from_vscode").lazy_load()
 local cmp = require("cmp")
 cmp.setup({
   mapping = cmp.mapping.preset.insert({

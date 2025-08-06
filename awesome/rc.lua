@@ -45,7 +45,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+--beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(gears.filesystem.get_configuration_dir() .. "myTheme.lua")
 --beautiful.wallpaper = "/home/voidg/dev/wallpaper/wallpaper1.jpg"
 
 -- This is used later as the default terminal and editor to run.
