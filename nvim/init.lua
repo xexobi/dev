@@ -12,7 +12,7 @@ require('options-conf') --for options
 require('autopairs-conf')-- for autopairs
 require('lsp-conf') --for Lsp
 --===============================================================
-vim.cmd[[colorscheme tokyonight-storm]]
+vim.cmd[[colorscheme tokyonight-night]]
 --===============================================================
 
 -- vim.fn.Py_line_config({
