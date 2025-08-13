@@ -198,6 +198,22 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
+    local cpu_temp_widget = wibox.widget {
+    widget = wibox.widget.textbox,
+}
+
+awful.widget.watch("sysctl -n dev.cpu.0.temperature", 5,
+    function(widget, stdout)
+        local temp = stdout:match("(%d+%.?%d*)C")
+        if temp then
+            widget:set_text("🌡️ " .. temp .. "°C")
+        else
+            widget:set_text("🌡️ N/A")
+        end
+    end,
+    cpu_temp_widget
+)
+
     s.mywibox = awful.wibar({ position = "bottom", screen = s , height = 15})
 
     -- Add widgets to the wibox
@@ -212,6 +228,7 @@ awful.screen.connect_for_each_screen(function(s)
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
+            cpu_temp_widget,
             mytextclock,
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
