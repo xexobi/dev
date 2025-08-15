@@ -11,13 +11,18 @@ riverctl map normal Super C close
 riverctl map normal Super+Shift Q exit
 # Restart skrip init (Super+Ctrl+R)
 riverctl map normal Super+Control R spawn "sh ~/.config/river/init"
-riverctl map normal Super N focus-previous-tags
 # Workspace / tags 1–9
 for i in $(seq 1 5); do
     riverctl map normal Super $i set-focused-tags $((1 << ($i - 1)))
     riverctl map normal Super+Shift $i set-view-tags $((1 << ($i - 1)))
 done
 
+#next and previous tags 
+#using module : 
+#git clone https://github.com/NickHastings/riverwm-utils.git
+#command to build on freebsd : CFLAGS="-I/usr/local/include" LDFLAGS="-L/usr/local/lib" python3 -m pip install ./riverwm-utils
+riverctl map normal Super period spawn "cycle-focused-tags +1 5"
+riverctl map normal Super comma spawn "cycle-focused-tags -1 5"
 
 # --- Window management ---
 # Fokus ke jendela di arah tertentu
