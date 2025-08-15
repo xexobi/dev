@@ -9,3 +9,5 @@
     co = checkout
     st = status
 
+[safe]
+	directory = /usr/ports

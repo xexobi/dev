@@ -11,6 +11,7 @@ require('keymaps-conf') --for keymaps
 require('options-conf') --for options
 require('autopairs-conf')-- for autopairs
 require('lsp-conf') --for Lsp
+require('tokyo-conf') --for Lsp
 --===============================================================
 vim.cmd[[colorscheme tokyonight-night]]
 --===============================================================

@@ -1,3 +1,5 @@
+pkill waybar 
+waybar &
 # --- Basic Keybindings seperti AwesomeWM ---
 # Buka terminal (Super+Enter)
 riverctl map normal Super Return spawn alacritty
@@ -9,6 +11,7 @@ riverctl map normal Super C close
 riverctl map normal Super+Shift Q exit
 # Restart skrip init (Super+Ctrl+R)
 riverctl map normal Super+Control R spawn "sh ~/.config/river/init"
+riverctl map normal Super N focus-previous-tags
 # Workspace / tags 1–9
 for i in $(seq 1 5); do
     riverctl map normal Super $i set-focused-tags $((1 << ($i - 1)))
@@ -55,10 +58,7 @@ rivercarro -outer-gaps 0 -per-tag &
 
 
 # --- Wallpaper ---
-#swaybg -i /usr/local/share/pixmaps/freebsd-logo.png -m fill &
+swaybg -i ~/Downloads/illuminated-earth-vibrant-energy-in-the-dark-woods-wallpaper-2560x1080_14.jpg
 
 # --- Status bar ---
-pkill waybar 
-pulseaudio --start &
-waybar &
 
