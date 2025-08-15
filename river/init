@@ -1,10 +1,12 @@
+# --- Status bar ---
+
 pkill waybar 
 waybar &
 # --- Basic Keybindings seperti AwesomeWM ---
 # Buka terminal (Super+Enter)
 riverctl map normal Super Return spawn alacritty
 #Buka firefox 
-riverctl map normal Super B spawn firefox
+riverctl map normal Super P spawn "wofi --show drun"
 #Tutup aplikasi
 riverctl map normal Super C close
 # Keluar dari River (Super+Shift+Q)
@@ -49,12 +51,10 @@ riverctl map normal Super Space     send-layout-cmd rivercarro "main-location-cy
 
 # Add others rivercarro's commands the same way with the keybinds you'd like.
 # e.g.
+ riverctl map normal Super I send-layout-cmd rivercarro "outer-gaps -10"
+ riverctl map normal Super O send-layout-cmd rivercarro "outer-gaps +10"
 # riverctl map normal Super <keys> send-layout-cmd rivercarro "inner-gaps -1"
 # riverctl map normal Super <keys> send-layout-cmd rivercarro "inner-gaps +1"
-# riverctl map normal Super <keys> send-layout-cmd rivercarro "outer-gaps -1"
-# riverctl map normal Super <keys> send-layout-cmd rivercarro "outer-gaps +1"
-# riverctl map normal Super <keys> send-layout-cmd rivercarro "width-ratio -0.1"
-# riverctl map normal Super <keys> send-layout-cmd rivercarro "width-ratio +0.1"
 
 # Set the default layout generator to be rivercarro and start it.
 # River will send the process group of the init executable SIGTERM on exit.
@@ -63,7 +63,4 @@ rivercarro -outer-gaps 0 -per-tag &
 
 
 # --- Wallpaper ---
-swaybg -i ~/Downloads/illuminated-earth-vibrant-energy-in-the-dark-woods-wallpaper-2560x1080_14.jpg
-
-# --- Status bar ---
-
+swaybg -i ~/Downloads/summer_tropical_vacation_sea_palm_trees_resort-wallpaper-1366x768.jpg
