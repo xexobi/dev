@@ -50,13 +50,15 @@ riverctl map normal Super Space     send-layout-cmd rivercarro "main-location-cy
 
 # Add others rivercarro's commands the same way with the keybinds you'd like.
 # e.g.
- riverctl map normal Super I send-layout-cmd rivercarro "outer-gaps -10"
- riverctl map normal Super O send-layout-cmd rivercarro "outer-gaps +10"
+ riverctl map normal Super I send-layout-cmd rivercarro "outer-gaps -2"
+ riverctl map normal Super O send-layout-cmd rivercarro "outer-gaps +2"
 # riverctl map normal Super <keys> send-layout-cmd rivercarro "inner-gaps -1"
 # riverctl map normal Super <keys> send-layout-cmd rivercarro "inner-gaps +1"
 # Set the default layout generator to be rivercarro and start it.
 # River will send the process group of the init executable SIGTERM on exit.
-riverctl default-layout rivercarro 
-rivercarro -outer-gaps 0 -per-tag &
+riverctl default-layout rivercarro
+riverctl rule-add ssd &
+riverctl border-color-focused 0xea999c &
+rivercarro -outer-gaps 0 -per-tag -no-smart-gaps &
 # --- Wallpaper ---
-swaybg -i ~/Downloads/summer_tropical_vacation_sea_palm_trees_resort-wallpaper-1366x768.jpg
+swaybg -i ~/Downloads/20875313_6389081.jpg

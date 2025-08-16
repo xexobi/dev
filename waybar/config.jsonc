@@ -8,12 +8,12 @@
   "modules-center": ["clock"],
   "modules-right": [
     "pulseaudio",
-    "custom/net_speed",
     "temperature",
     "custom/uptime",
     "cpu",
     "memory",
     "custom/lock",
+    "custom/net_speed",
     "custom/power"
   ],
   "custom/net_speed": {
