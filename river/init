@@ -1,5 +1,4 @@
 # --- Status bar ---
-
 pkill waybar 
 waybar &
 # --- Basic Keybindings seperti AwesomeWM ---
@@ -55,12 +54,9 @@ riverctl map normal Super Space     send-layout-cmd rivercarro "main-location-cy
  riverctl map normal Super O send-layout-cmd rivercarro "outer-gaps +10"
 # riverctl map normal Super <keys> send-layout-cmd rivercarro "inner-gaps -1"
 # riverctl map normal Super <keys> send-layout-cmd rivercarro "inner-gaps +1"
-
 # Set the default layout generator to be rivercarro and start it.
 # River will send the process group of the init executable SIGTERM on exit.
 riverctl default-layout rivercarro 
 rivercarro -outer-gaps 0 -per-tag &
-
-
 # --- Wallpaper ---
 swaybg -i ~/Downloads/summer_tropical_vacation_sea_palm_trees_resort-wallpaper-1366x768.jpg
