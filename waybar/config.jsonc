@@ -25,7 +25,9 @@
 
     "river/tags":{
 //        "hide-vacant": true,
-        "num-tags": 5
+        "num-tags": 5,
+        "focused-tag": "",
+        "format": "{name}"
     },
     "river/window": {
     "format": "{}",
