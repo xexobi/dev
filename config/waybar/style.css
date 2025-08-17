@@ -13,34 +13,29 @@
   margin: 2px 2px;
 }
 
-#tags {
+#workspaces {
   border-radius: 5px;
   margin: 5px;
   background: #101010;
   margin-left: 2px;
 }
 
-#tags button {
+#workspaces button {
   color: #babbf1;
-  padding: 0.4rem;
-}
-#window {
   border-radius: 5px;
-  background-color: #101010;
-  margin: 5px;
   padding: 0.4rem;
 }
 
-#tags button.focused{
-  background: #ea999c;
-  color : #000000;
+#workspaces button.active {
+  color: #99d1db;
+  border-radius: 5px;
 }
 
 button {
   background: transparent;
 }
 
-#tags button:hover {
+#workspaces button:hover {
   background: #1e1e1e;
   border: 0px solid transparent;
 }
@@ -51,11 +46,11 @@ button {
 #clock,
 #battery,
 #pulseaudio,
-#custom-net_speed,
+#network,
 #cpu,
+#temperature
 #memory,
 #custom-lock,
-#temperature,
 #custom-power,
 #custom-weather,
 #custom-uptime,
@@ -69,6 +64,7 @@ button {
   color: #8caaee;
   border-radius: 5px;
 }
+
 #custom-weather {
   color: #8caaee;
   margin-left: 0.5rem;
@@ -100,9 +96,7 @@ button {
   color: #ea999c;
   border-radius: 5px 0px 0px 5px;
 }
-#temperature {
-  color: #ea999c;
- }
+
 #custom-docker {
   color: #85c1dc;
 }
@@ -160,4 +154,4 @@ button {
 
 #custom-weather.error {
   color: #e78284; /* Red */
-}
+} 
