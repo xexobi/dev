@@ -12,6 +12,7 @@
     "temperature",
     "memory",
     "tray",
+    "custom/power"
   ],
 
   "hyprland/workspaces": {
@@ -48,6 +49,12 @@
       "default": ["", "", " "]
     },
     "on-click": "pavucontrol"
+  },
+
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "wlogout &",
+    "format": "⏻"
   },
   "temperature": {
       "interval": 1,

@@ -2,3 +2,7 @@
 
 cp -av ./config/* ~/.config
 cp -av ./config/.* ~/
+
+hyprctl reload
+
+pkill waybar && waybar >> /dev/null &
