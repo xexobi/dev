@@ -3,5 +3,6 @@
 cp -av ./config/* ~/.config
 
 hyprctl reload
+hyprpaper &
 
 pkill waybar && waybar >> /dev/null &
