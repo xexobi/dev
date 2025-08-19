@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "bottom",
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["river/tags"],
 
   "modules-center": ["clock"],
 
@@ -14,13 +14,8 @@
     "tray",
     "custom/power"
   ],
-
-  "hyprland/workspaces": {
-    "format": "{name}: {icon}",
-    "format-icons": {
-      "active": "",
-      "default": ""
-    }
+  "river/tags":{
+      "num-tags":4
   },
   "tray": {
     "icon-size": 16,
@@ -57,11 +52,11 @@
     "format": "⏻"
   },
     "temperature": {
-        "interval":1,
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        // "format-critical": "{temperatureC}°C {icon}",
+	 "thermal-zone": 2,
+     "interval":1,
+	// "hwmon-path": ["/sys/class/hwmon/hwmon2/temp1_input", "/sys/class/thermal/thermal_zone0/temp"],
+	// "critical-threshold": 80,
+	// "format-critical": "{temperatureC}°C ",
+	"format": "{temperatureC}°C "
     }
 }

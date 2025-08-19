@@ -1,5 +1,5 @@
 * {
-  font-family: JetbrainsMono Nerd Font;
+  font-family: JetBrainsMono Nerd Font;
   font-size: 10px;
   min-height: 0;
   padding-right: 2px;
@@ -13,21 +13,22 @@
   margin: 2px 2px;
 }
 
-#workspaces {
+#tags {
   border-radius: 5px;
   margin: 5px;
   background: #101010;
   margin-left: 2px;
 }
 
-#workspaces button {
+#tags button {
   color: #babbf1;
   border-radius: 5px;
   padding: 0.4rem;
 }
 
-#workspaces button.active {
-  color: #99d1db;
+#tags button.focused{
+  background: #e78284;
+  color: #ffffff;
   border-radius: 5px;
 }
 
@@ -35,7 +36,7 @@ button {
   background: transparent;
 }
 
-#workspaces button:hover {
+#tags button:hover {
   background: #1e1e1e;
   border: 0px solid transparent;
 }
