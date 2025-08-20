@@ -1,3 +1,4 @@
 #!/bin/sh
 
 cp -av ./config/* ~/.config
+cp -av ./config/.* ~/

@@ -5,22 +5,10 @@ pkill waybar
 waybar &
 swaybg -i ~/dev/wallpaper/wallpaper1.jpg &
 
-# This is the example configuration file for river.
-#
-# If you wish to edit this, you will probably want to copy it to
-# $XDG_CONFIG_HOME/river/init or $HOME/.config/river/init first.
-#
-# See the river(1), riverctl(1), and rivertile(1) man pages for complete
-# documentation.
-
-# Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
-
-# Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super Q spawn alacritty
 riverctl map normal Super R spawn "wofi --show drun"
 riverctl map normal Super+Shift R spawn "sh ~/.config/river/init"
 
-# Super+Q to close the focused view
 riverctl map normal Super C close
 
 # Super+Shift+E to exit river
