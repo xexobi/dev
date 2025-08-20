@@ -1,4 +1,6 @@
 #!/bin/sh
+sudo pacman -S python-pip river waybar swaybg neovim tmux alacritty wlr-randr pulseaudio pavucontrol --noconfirm --needed
+pip install pynvim --break-system-packages
 
 cp -av ./config/* ~/.config
 cp -av ./config/.* ~/
