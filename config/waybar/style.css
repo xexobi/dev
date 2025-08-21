@@ -1,6 +1,6 @@
 * {
   font-family: JetBrainsMono Nerd Font;
-  font-size: 10px;
+  font-size: 7px;
   min-height: 0;
   padding-right: 2px;
   padding-left: 2px;
@@ -64,6 +64,7 @@ button {
 #clock {
   color: #8caaee;
   border-radius: 5px;
+  font-size : 10px;
 }
 
 #custom-weather {
