@@ -5,14 +5,15 @@ pkill waybar
 waybar &
 swaybg -i ~/dev/wallpaper/wallpaper1.jpg &
 
-riverctl map normal Super Q spawn alacritty
-riverctl map normal Super R spawn "wofi --show drun"
+riverctl map normal Super T spawn alacritty
+riverctl map normal Super W spawn "wofi --show drun"
 riverctl map normal Super+Shift R spawn "sh ~/.config/river/init"
 
-riverctl map normal Super C close
 
 # Super+Shift+E to exit river
 riverctl map normal Super+Shift E exit
+#close apps
+riverctl map normal Super C close
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super J focus-view next
@@ -69,7 +70,7 @@ riverctl map-pointer normal Super BTN_RIGHT resize-view
 # Super + Middle Mouse Button to toggle float
 riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 
-for i in $(seq 1 9)
+for i in $(seq 1 5)
 do
     tags=$((1 << ($i - 1)))
 
@@ -150,6 +151,7 @@ riverctl rule-add -app-id 'float*' -title 'foo' float
 
 # Make all views with app-id "bar" and any title use client-side decorations
 riverctl rule-add -app-id "bar" csd
+riverctl spawn alacritty
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.

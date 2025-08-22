@@ -24,7 +24,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 --list server 
 --===============================================================
 mason_lspconfig.setup({
-    ensure_installed = {"clangd","lua_ls","pyright","html","bashls"},
+    ensure_installed = {"zls","clangd","lua_ls","pyright","html","bashls"},
         -- automatic Configuration for evry LS
     handlers = {function(server_name)
         lspconfig[server_name].setup({

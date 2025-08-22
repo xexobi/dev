@@ -1,6 +1,7 @@
 #!/bin/sh
-sudo pacman -S python-pip river waybar swaybg neovim tmux alacritty wlr-randr pulseaudio pavucontrol --noconfirm --needed
+sudo pacman -S python-pip river waybar swaybg neovim tmux alacritty wlr-randr pulseaudio pavucontrol waylock --noconfirm --needed
 pip install pynvim --break-system-packages
-
 cp -av ./config/* ~/.config
+echo "All .config is Update!!"
 cp -av ./config/.* ~/
+echo "All home config is Update!!"
