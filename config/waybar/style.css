@@ -8,11 +8,10 @@
 }
 
 #waybar {
-  background: transparent;
+  background: #ffffff;
   color: #c6d0f5;
   margin: 2px 2px;
 }
-
 #tags {
   border-radius: 5px;
   margin: 5px;
@@ -41,6 +40,31 @@ button {
   border: 0px solid transparent;
 }
 
+
+#taskbar {
+  border-radius: 5px;
+  margin: 5px;
+  background: #101010;
+  margin-left: 2px;
+}
+
+#taskbar button {
+  color: #babbf1;
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+
+#taskbar button.focused{
+  background: #e78284;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+#taskbar button:hover {
+  background: #1e1e1e;
+  border: 0px solid transparent;
+}
+
 #custom-music,
 #tray,
 #backlight,
@@ -64,8 +88,8 @@ button {
 #clock {
   color: #8caaee;
   border-radius: 5px;
-  font-size : 10px;
-}
+  font-size : 9px;
+} 
 
 #custom-weather {
   color: #8caaee;

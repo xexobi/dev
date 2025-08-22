@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "bottom",
-  "modules-left": ["river/tags"],
+  "modules-left": ["river/tags","wlr/taskbar"],
 
   "modules-center": ["clock"],
 
@@ -56,7 +56,7 @@
 
   "custom/power": {
     "tooltip": false,
-    "on-click": "wlogout &",
+    "on-click": "waylock",
     "format": "⏻"
   },
     "temperature": {
@@ -66,5 +66,12 @@
 	// "critical-threshold": 80,
 	// "format-critical": "{temperatureC}°C ",
 	"format": "{temperatureC}°C "
-    }
+    },
+    "wlr/taskbar": {
+  "format": "{icon}",
+  "icon-size": 16,
+  "all-outputs": true,
+  "ignore-list": ["waybar"]  // biar Waybar tidak ditampilkan
+}
+
 }
