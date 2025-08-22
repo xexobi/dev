@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "bottom",
-  "modules-left": ["niri/workspaces"],
+  "modules-left": ["river/tags"],
 
   "modules-center": ["clock"],
 
@@ -14,6 +14,9 @@
     "tray",
     "custom/power"
   ],
+  "river/tags":{
+      "num-tags":5
+  },
   "niri/workspaces": {
 	"format": "{icon}",
     "format-icons":{
