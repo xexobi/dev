@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "bottom",
-  "modules-left": ["river/tags"],
+  "modules-left": ["niri/workspaces"],
 
   "modules-center": ["clock"],
 
@@ -14,9 +14,14 @@
     "tray",
     "custom/power"
   ],
-  "river/tags":{
-      "num-tags":4
-  },
+  "niri/workspaces": {
+	"format": "{icon}",
+    "format-icons":{
+        "active": "",
+		"default": ""
+    }
+
+},
   "tray": {
     "icon-size": 16,
     "spacing": 10
