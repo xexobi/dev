@@ -3,7 +3,10 @@
   "position": "bottom",
   "modules-left": ["niri/workspaces","wlr/taskbar"],
 
-  "modules-center": ["clock"],
+  "modules-center": [
+    "custom/power",
+      "clock"
+  ],
 
   "modules-right": [
     "pulseaudio",
@@ -11,8 +14,7 @@
     "cpu",
     "temperature",
     "memory",
-    "tray",
-    "custom/power"
+    "tray"
   ],
   "niri/workspaces": {
 	"format": "{icon}",

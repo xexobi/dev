@@ -1,29 +1,24 @@
 * {
   font-family: JetBrainsMono Nerd Font;
-  font-size: 7px;
-  min-height: 0;
-  padding-right: 2px;
-  padding-left: 2px;
-  padding-bottom: 0px;
+  font-size: 8px;
+  min-height: 0px;
 }
 
 #waybar {
-  background: #ffffff;
+  background: transparent;
   color: #c6d0f5;
-  margin: 2px 2px;
   border-radius: 5px;
 }
 #workspaces {
   border-radius: 5px;
-  margin: 5px;
   background: #101010;
-  margin-left: 2px;
+  margin: 2px;
+  padding: 0.2rem;
 }
 
 #workspaces button {
   color: #babbf1;
   border-radius: 5px;
-  padding: 0.4rem;
 }
 
 #workspaces button.focused{
@@ -44,15 +39,13 @@ button {
 
 #taskbar {
   border-radius: 5px;
-  margin: 5px;
   background: #101010;
-  margin-left: 2px;
+  margin: 2px;
 }
 
 #taskbar button {
   color: #babbf1;
   border-radius: 5px;
-  padding: 0.4rem;
 }
 
 #taskbar button.focused{
@@ -82,103 +75,44 @@ button {
 #custom-uptime,
 #custom-docker {
   background-color: #101010;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  padding: 0.3rem;
 }
 
 #clock {
   color: #8caaee;
-  border-radius: 5px;
-  font-size : 9px;
+  border-radius: 0px 5px 5px 0px;
 } 
-
-#custom-weather {
-  color: #8caaee;
-  margin-left: 0.5rem;
-  border-radius: 5px;
-}
-
-#battery {
-  color: #a6d189;
-}
-
-#battery.charging {
-  color: #a6d189;
-}
-
-#battery.warning:not(.charging) {
-  color: #e78284;
-}
-
-#backlight {
-  color: #e5c890;
-}
-
-#backlight,
-#battery {
-  border-radius: 0;
-}
 
 #pulseaudio {
   color: #ea999c;
   border-radius: 5px 0px 0px 5px;
 }
-
-#custom-docker {
-  color: #85c1dc;
+#network {
+  color: #ea999c;
+  border-radius: 0px 0px 0px 0px;
 }
-
-#custom-music {
-  color: #ca9ee6;
-  border-radius: 5px;
+#cpu {
+  color: #ea999c;
+  border-radius: 0px 0px 0px 0px;
 }
-
-#custom-lock {
-  color: #babbf1;
+#temperature {
+  color: #ea999c;
+  border-radius: 0px 0px 0px 0px;
+}
+#memory {
+  color: #ea999c;
+  border-radius: 0px 0px 0px 0px;
+}
+#tray {
+  color: #ea999c;
+  border-radius: 0px 0px 0px 0px;
+  padding-right:30px;
 }
 
 #custom-power {
-  margin-right: 1rem;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 5px 0px 0px 5px;
   color: #e78284;
 }
-
-#custom-docker.docker {
-  color: #85c1dc;
-}
-
-#custom-docker.docker-none {
-  color: #737994;
-}
-
-#custom-docker.docker-error {
-  color: #e78284;
-}
-
-#custom-weather.clear {
-  color: #e5c890; /* Sunny yellow */
-}
-
-#custom-weather.cloud {
-  color: #99d1db; /* Light blue */
-}
-
-#custom-weather.rain {
-  color: #8caaee; /* Blue */
-}
-
-#custom-weather.snow {
-  color: #c6d0f5; /* White-ish */
-}
-
-#custom-weather.thunder {
-  color: #ca9ee6; /* Purple */
-}
-
-#custom-weather.fog {
-  color: #b0b4bc; /* Gray */
-}
-
-#custom-weather.error {
-  color: #e78284; /* Red */
-} 
