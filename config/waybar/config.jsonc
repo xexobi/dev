@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "bottom",
-  "modules-left": ["river/tags","wlr/taskbar"],
+  "modules-left": ["niri/workspaces","wlr/taskbar"],
 
   "modules-center": ["clock"],
 
@@ -14,9 +14,6 @@
     "tray",
     "custom/power"
   ],
-  "river/tags":{
-      "num-tags":5
-  },
   "niri/workspaces": {
 	"format": "{icon}",
     "format-icons":{
