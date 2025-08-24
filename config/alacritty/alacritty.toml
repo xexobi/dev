@@ -3,4 +3,5 @@
     size =10
 
 [window]
+    blur = true
     opacity = 0.8

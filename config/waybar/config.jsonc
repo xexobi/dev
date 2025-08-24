@@ -53,7 +53,7 @@
 
   "custom/power": {
     "tooltip": false,
-    "on-click": "waylock",
+    "on-click": "hyprlock",
     "format": "⏻"
   },
     "temperature": {
