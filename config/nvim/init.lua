@@ -1,5 +1,8 @@
 --Configuration plugins
 --===============================================================
+-- start of your init.lua
+vim.g.loaded_netrw       = 1
+vim.g.loaded_netrwPlugin = 1
 vim.api.nvim_create_user_command("Setings", function()
   vim.cmd("cd ~/.config/nvim")
   vim.cmd("edit init.lua")
