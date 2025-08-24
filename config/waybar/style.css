@@ -13,7 +13,6 @@
   border-radius: 5px;
   background: #101010;
   margin: 2px;
-  padding: 0.2rem;
 }
 
 #workspaces button {
@@ -29,6 +28,7 @@
 
 button {
   background: transparent;
+  padding: 0.4rem;
 }
 
 #workspaces button:hover {

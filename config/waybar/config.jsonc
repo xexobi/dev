@@ -1,7 +1,7 @@
 {
   "layer": "bottom",
   "position": "bottom",
-  "modules-left": ["niri/workspaces","wlr/taskbar"],
+  "modules-left": ["niri/workspaces"],
 
   "modules-center": [
     "custom/power",
@@ -9,6 +9,7 @@
   ],
 
   "modules-right": [
+      "wlr/taskbar",
     "pulseaudio",
     "network",
     "cpu",
