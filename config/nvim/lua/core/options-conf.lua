@@ -18,4 +18,5 @@ set.expandtab=true
 set.swapfile=false
 set.undofile=true
 set.clipboard='unnamedplus'
+vim.o.colorcolumn = "81"
 

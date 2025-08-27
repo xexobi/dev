@@ -9,5 +9,3 @@ vim.cmd[[colorscheme cyberdream]]
 require("nvim-autopairs").setup()
 require("telescope").setup()
 require("ibl").setup()
-
-
