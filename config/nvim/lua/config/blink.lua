@@ -17,5 +17,11 @@ require("blink.cmp").setup({
     signature = {
         enabled = true,
   },
-})
+    completion = {
+        documentation = {auto_show = true},
+        menu = {
+            auto_show = true
+        }
 
+    },
+})

@@ -33,5 +33,8 @@ vim.pack.add({
       {
           src="https://github.com/xexobi/py_linevim"
       },
+      {
+          src="https://github.com/projekt0n/github-nvim-theme"
+      },
 
 })
