@@ -5,7 +5,7 @@ require("config.mason")
 require("config.lsp")
 require("config.blink")
 require("config.treesiter")
-vim.cmd[[colorscheme nord]]
+vim.cmd[[colorscheme cyberdream]]
 require("nvim-autopairs").setup()
 require("telescope").setup()
 require("ibl").setup()

@@ -13,9 +13,6 @@ vim.pack.add({
           src="https://github.com/nvim-treesitter/nvim-treesitter"
       },
       {
-          src="https://github.com/shaunsingh/nord.nvim"
-      },
-      {
           src="https://github.com/mason-org/mason-lspconfig.nvim",
       },
       {
@@ -31,13 +28,10 @@ vim.pack.add({
           src="https://github.com/nvim-tree/nvim-web-devicons"
       },
       {
-          src="https://github.com/xexobi/py_linevim"
-      },
-      {
-          src="https://github.com/projekt0n/github-nvim-theme"
-      },
-      {
           src="https://github.com/lukas-reineke/indent-blankline.nvim"
+      },
+      {
+          src="https://github.com/scottmckendry/cyberdream.nvim"
       },
 
 })
