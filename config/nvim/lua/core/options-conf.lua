@@ -4,6 +4,7 @@ local set = vim.opt
 set.number = true
 set.relativenumber = true
 set.cursorline= true
+set.linebreak= true
 --===============================================================
 set.termguicolors= true
 set.wrap= false
