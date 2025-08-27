@@ -10,4 +10,3 @@ require("nvim-autopairs").setup()
 require("telescope").setup()
 
 
-
