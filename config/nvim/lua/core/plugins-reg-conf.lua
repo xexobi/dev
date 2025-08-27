@@ -36,5 +36,8 @@ vim.pack.add({
       {
           src="https://github.com/projekt0n/github-nvim-theme"
       },
+      {
+          src="https://github.com/lukas-reineke/indent-blankline.nvim"
+      },
 
 })

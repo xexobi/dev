@@ -5,13 +5,13 @@ require("mason-lspconfig").setup {
     "rust_analyzer",
     "vimls",
     "bashls",
-    "clangd",
+    "html",
     "pyright"
 },
      automatic_enable = {
         "rust_analyzer",
         "vimls",
-        "clangd",
+        "html",
         "bashls",
         "pyright",
     }

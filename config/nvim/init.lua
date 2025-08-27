@@ -8,5 +8,6 @@ require("config.treesiter")
 vim.cmd[[colorscheme nord]]
 require("nvim-autopairs").setup()
 require("telescope").setup()
+require("ibl").setup()
 
 

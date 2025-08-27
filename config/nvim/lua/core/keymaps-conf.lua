@@ -6,7 +6,7 @@ map('t','<Esc>','<C-\\><C-n>',{silent=true,noremap=true})
 -- untuk save file
 --===============================================================
 map('n','<leader>w',':w<cr>',{silent=true,noremap=true})
-map('n','<leader>e',':Ntree<cr>',{silent=true,noremap=true})
+map('n','<leader>e',':Lexplore<cr>',{silent=true,noremap=true})
 --untuk exit neovim
 --===============================================================
 map('n','<leader>q',':q<cr>',{silent=true,noremap=true})
