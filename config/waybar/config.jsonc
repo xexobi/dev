@@ -9,12 +9,12 @@
   ],
 
   "modules-right": [
-      "wlr/taskbar",
+    "wlr/taskbar",
     "pulseaudio",
     "cpu",
     "temperature",
-    "memory",
-    "tray"
+    "memory"
+    //"tray"
   ],
   "niri/workspaces": {
 	"format": "{icon}",

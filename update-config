@@ -1,5 +1,6 @@
-#!/bin/sh
-cp -av ./config/* ~/.config
+#!/bin/zsh
+bash -c 'cp -av ./config/* ~/.config'
 echo "All .config is Update!!"
-cp -av ./config/.* ~/
+bash -c 'cp -av ./config/.[!.]* ~/'
 echo "All home config is Update!!"
+
