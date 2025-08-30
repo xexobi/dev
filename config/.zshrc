@@ -21,5 +21,5 @@ fi
 if [ -z "$DBUS_SESSION_BUS_ADRESS"] && command -v dbus-launch >/dev/null; then
 	eval "$(dbus-launch --sh-syntax)"
 fi
-export PATH=$HOME/.local/nvim/bin/bin:$PATH
+export PATH=$HOME/.local/nvim/bin:$PATH
 . "$HOME/.cargo/env"

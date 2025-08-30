@@ -66,6 +66,11 @@ input {
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     // focus-follows-mouse max-scroll-amount="0%"
 }
+cursor {
+    xcursor-theme "MacTahoe-dark-cursors"
+    xcursor-size 15
+}
+
 
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
@@ -260,7 +265,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
-spawn-at-startup "alacritty"
+spawn-at-startup "ghostty"
 spawn-at-startup "~/dev/config/niri/wallpaper.sh"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
