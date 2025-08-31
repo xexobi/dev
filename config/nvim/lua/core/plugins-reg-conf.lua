@@ -32,5 +32,7 @@ vim.pack.add({
       },
       {
           src="https://github.com/scottmckendry/cyberdream.nvim"
-      },
+      },{
+          src="https://github.com/nvim-telescope/telescope-file-browser.nvim"
+      }
 })

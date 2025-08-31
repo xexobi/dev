@@ -19,6 +19,7 @@ map("v", "<Tab>", ">gv", { noremap = true, silent = true })
 --===============================================================
 --telescope map
 map('n','<leader>ff',':Telescope find_files<cr>',{silent=true,noremap=true})
+map('n','<leader>fb',':Telescope file_browser<cr>',{silent=true,noremap=true})
 map('n','<leader><Tab>',':bp<cr>',{silent=true,noremap=true})
 map('n','<Tab>',':bn<cr>',{silent=true,noremap=true})
 map('n','<leader>x',':bd<cr>',{silent=true,noremap=true})
