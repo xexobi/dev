@@ -58,7 +58,6 @@ button {
   background: #1e1e1e;
   border: 0px solid transparent;
 }
-
 #clock,
 #pulseaudio,
 #network,
@@ -76,25 +75,37 @@ button {
 #clock {
   color: #05f009;
   border-radius: 0px 0px 0px 0px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
 } 
 
 #pulseaudio {
   border-radius: 5px 0px 0px 5px;
   margin-left: 2px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
 }
 #network {
   color: #ea999c;
   border-radius: 0px 0px 0px 0px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
 }
 #cpu {
   border-radius: 0px 0px 0px 0px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
 }
 #temperature {
   color: #05f009;
   border-radius: 0px 0px 0px 0px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
 }
 #memory {
   color: #ea999c;
   border-radius: 0px 0px 0px 0px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
 }
 

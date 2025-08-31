@@ -28,7 +28,7 @@
   "clock": {
     "timezone": "Asia/Jakarta",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%d/%m/%Y - %H:%M:%S}",
+    "format": "{:%d/%m - %H:%M}",
     "interval": 1
   },
   "cpu": {
