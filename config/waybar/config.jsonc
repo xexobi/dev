@@ -2,10 +2,10 @@
   "layer": "bottom",
   "position": "bottom",
   "modules-left": [
-      "niri/workspaces"
   ],
 
   "modules-center": [
+      "hyprland/workspaces"
   ],
 
   "modules-right": [
@@ -17,14 +17,20 @@
     "memory"
     //"tray"
   ],
-  "niri/workspaces": {
-	"format": "{icon}",
-    "format-icons":{
-        "active": "",
-		"default": ""
-    }
-
-},
+  "hyprland/workspaces": {
+        "disable-scroll": true,
+		"format": "{name} {icon}",
+		"format-icons": {
+			"active": " ",
+			"default": " "
+		},
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+        },
+    },
   "clock": {
     "timezone": "Asia/Jakarta",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
