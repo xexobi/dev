@@ -29,7 +29,7 @@
 
 button {
   background: transparent;
-  padding: 0.4rem;
+  padding: 0rem;
 }
 
 #workspaces button:hover {
@@ -59,35 +59,26 @@ button {
   border: 0px solid transparent;
 }
 
-#custom-music,
-#tray,
-#backlight,
 #clock,
-#battery,
 #pulseaudio,
 #network,
 #cpu,
 #temperature,
-#memory,
-#custom-lock,
-#custom-power,
-#custom-weather,
-#custom-uptime,
-#custom-docker {
+#memory{
   background-color: #101010;
   margin-top: 2px;
   margin-bottom: 2px;
   border-radius: 5px;
-  padding: 0.3rem;
+  padding: 0rem;
+  padding:0px 5px 0px 5px;
 }
 
 #clock {
-  color: #8caaee;
-  border-radius: 0px 5px 5px 0px;
+  color: #05f009;
+  border-radius: 0px 0px 0px 0px;
 } 
 
 #pulseaudio {
-  color: #ea999c;
   border-radius: 5px 0px 0px 5px;
   margin-left: 2px;
 }
@@ -96,25 +87,14 @@ button {
   border-radius: 0px 0px 0px 0px;
 }
 #cpu {
-  color: #ea999c;
   border-radius: 0px 0px 0px 0px;
 }
 #temperature {
-  color: #ea999c;
+  color: #05f009;
   border-radius: 0px 0px 0px 0px;
 }
 #memory {
   color: #ea999c;
   border-radius: 0px 0px 0px 0px;
-  padding-right:30px;
-}
-#tray {
-  color: #ea999c;
-  border-radius: 0px 0px 0px 0px;
-  padding-right:30px;
 }
 
-#custom-power {
-  border-radius: 5px 0px 0px 5px;
-  color: #e78284;
-}

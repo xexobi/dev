@@ -1,16 +1,17 @@
 {
   "layer": "bottom",
   "position": "bottom",
-  "modules-left": ["niri/workspaces"],
+  "modules-left": [
+      "niri/workspaces"
+  ],
 
   "modules-center": [
-    "custom/power",
-      "clock"
   ],
 
   "modules-right": [
     "wlr/taskbar",
     "pulseaudio",
+    "clock", 
     "cpu",
     "temperature",
     "memory"
@@ -24,11 +25,6 @@
     }
 
 },
-  "tray": {
-    "icon-size": 16,
-    "spacing": 10
-  },
-
   "clock": {
     "timezone": "Asia/Jakarta",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -52,12 +48,6 @@
     },
     "on-click": "pavucontrol"
   },
-
-  "custom/power": {
-    "tooltip": false,
-    "on-click": "hyprlock",
-    "format": "⏻"
-  },
     "temperature": {
 	 "thermal-zone": 2,
      "interval":1,
@@ -72,5 +62,4 @@
   "all-outputs": true,
   "ignore-list": ["waybar"]  // biar Waybar tidak ditampilkan
 }
-
 }
