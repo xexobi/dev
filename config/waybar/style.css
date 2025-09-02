@@ -12,7 +12,6 @@
 #workspaces {
   background: #101010;
   margin: 2px;
-  padding-left: 4px;
 }
 
 #workspaces button {
@@ -22,6 +21,7 @@
 #workspaces button.focused{
   background: #e78284;
   color: #ffffff;
+  border-radius: 0px 0px 0px 0px;
 }
 
 button {
