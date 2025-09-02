@@ -8,10 +8,8 @@
 #waybar {
   background: transparent;
   color: #c6d0f5;
-  border-radius: 5px;
 }
 #workspaces {
-  border-radius: 5px;
   background: #101010;
   margin: 2px;
   padding-left: 4px;
@@ -19,13 +17,11 @@
 
 #workspaces button {
   color: #babbf1;
-  border-radius: 5px;
 }
 
 #workspaces button.focused{
   background: #e78284;
   color: #ffffff;
-  border-radius: 5px;
 }
 
 button {
@@ -40,19 +36,16 @@ button {
 
 
 #taskbar {
-  border-radius: 5px;
   background: #101010;
 }
 
 #taskbar button {
   color: #babbf1;
-  border-radius: 5px;
 }
 
 #taskbar button.focused{
   background: #e78284;
   color: #ffffff;
-  border-radius: 5px;
 }
 
 #taskbar button:hover {
@@ -68,44 +61,37 @@ button {
   background-color: #101010;
   margin-top: 2px;
   margin-bottom: 2px;
-  border-radius: 5px;
   padding: 0rem;
   padding:0px 5px 0px 5px;
 }
 
 #clock {
   color: #05f009;
-  border-radius: 0px 0px 0px 0px;
   border-bottom: 2px solid;
   border-right: 2px solid;
 } 
 
 #pulseaudio {
-  border-radius: 5px 0px 0px 5px;
   margin-left: 2px;
   border-bottom: 2px solid;
   border-right: 2px solid;
 }
 #network {
   color: #ea999c;
-  border-radius: 0px 0px 0px 0px;
   border-bottom: 2px solid;
   border-right: 2px solid;
 }
 #cpu {
-  border-radius: 0px 0px 0px 0px;
   border-bottom: 2px solid;
   border-right: 2px solid;
 }
 #temperature {
   color: #05f009;
-  border-radius: 0px 0px 0px 0px;
   border-bottom: 2px solid;
   border-right: 2px solid;
 }
 #memory {
   color: #ea999c;
-  border-radius: 0px 0px 0px 0px;
   border-bottom: 2px solid;
   border-right: 2px solid;
 }
